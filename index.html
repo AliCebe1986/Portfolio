@@ -22,7 +22,12 @@
   <body>
     <div id="root"></div>
     <!-- Fix JavaScript path - change from absolute to relative path -->
-    <script type="module" src="./src/main.tsx"></script>
+    <!-- Replace the current script tag with one of these options depending on your actual file location -->
+    <script type="module" src="./main.tsx"></script>
+    <!-- OR -->
+    <script type="module" src="src/main.tsx"></script>
+    <!-- OR -->
+    <script type="module" src="dist/main.js"></script> <!-- If using a build tool -->
     <!-- Make content visible once DOM is ready -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {

@@ -1,7 +1,9 @@
+# My Portfolio Website
 
-# Ali Cebe Portfolio
+This is my personal portfolio website, showcasing my skills and projects.
 
-A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
+## Visit the Site
+The site is hosted on GitHub Pages at: [username.github.io/Portfolio](https://username.github.io/Portfolio)
 
 ## Deployment
 
