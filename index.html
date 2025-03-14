@@ -1,16 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="/alicebe/" />
     <title>Ali Cebe</title>
     <meta name="description" content="Ali Cebe Portfolio" />
     <meta name="author" content="Ali Cebe" />
     <meta property="og:image" content="/og-image.png" />
-    <!-- Preload critical assets -->
-    <link rel="preload" href="./src/index.css" as="style" />
+    <!-- Fix CSS path - change from absolute to relative path -->
+    <link rel="stylesheet" href="./src/index.css">
+    <!-- Remove any incorrect preload references -->
+    <!-- <link rel="preload" href="alicebe/src/index.css" as="style"> -->
     <!-- Prevent Flash of Unstyled Content -->
     <style>
       body {
@@ -21,7 +21,7 @@
 
   <body>
     <div id="root"></div>
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <!-- Fix JavaScript path - change from absolute to relative path -->
     <script type="module" src="./src/main.tsx"></script>
     <!-- Make content visible once DOM is ready -->
     <script>
