@@ -121,7 +121,7 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Made with <Heart className="mx-1 w-4 h-4 text-primary animate-pulse-subtle" /> by Ali Cebe
+            Made by Ali Cebe
           </motion.p>
         </div>
       </div>

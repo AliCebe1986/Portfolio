@@ -21,5 +21,5 @@ npm run deploy
 1. In your GitHub repository, go to Settings > Pages
 2. Set the source to "GitHub Actions"
 
-The site will be available at: https://username.github.io/repository-name/
+The site will be available at: https://AliCebe1985.github.io/Portfolio/
 
