@@ -94,18 +94,20 @@ const About = () => {
           >
             <h3 className="text-2xl font-bold">My Journey</h3>
             <p className="text-muted-foreground">
-              With a background in web development, I've spent years honing my skills in building
-              modern, responsive websites and applications. My passion lies in creating clean,
-              user-friendly interfaces that provide exceptional user experiences.
+              I'm a recent graduate from George Brown College with an Advanced Diploma in Computer Programming
+              and Analysis (May 2025). My passion for technology and continuous learning drives me to stay
+              current with modern development practices and emerging technologies.
             </p>
             <p className="text-muted-foreground">
-              I'm constantly learning and adapting to new technologies and methodologies to stay
-              at the forefront of web development. My goal is to create digital solutions that are
-              not only visually appealing but also functional and accessible to all users.
+              I specialize in full-stack development using technologies like C#, ASP.NET Core, JavaScript,
+              React, and React Native. Currently, I'm exploring AI integration in mobile applications,
+              working on projects that combine traditional development with cutting-edge AI APIs like
+              ChatGPT and OpenAI for innovative user experiences.
             </p>
             <p className="text-muted-foreground">
-              Outside of coding, I enjoy exploring new design trends, contributing to open-source
-              projects, and sharing my knowledge with the developer community.
+              My goal is to create digital solutions that are not only technically robust but also
+              user-friendly and accessible. I'm constantly expanding my skill set and eager to apply
+              my knowledge to real-world challenges in software development.
             </p>
           </motion.div>
 
@@ -121,25 +123,17 @@ const About = () => {
               <div className="w-full max-w-md space-y-4">
                 <div className="text-center">
                   <h3 className="text-xl font-semibold mb-1">Ali Cebe</h3>
-                  <p className="text-sm text-muted-foreground">Web Developer & UI/UX Enthusiast</p>
+                  <p className="text-sm text-muted-foreground">Full-Stack Developer</p>
                 </div>
-                
+
                 <div className="grid grid-cols-2 gap-3 text-center">
                   <div className="bg-background/50 rounded-lg p-3 glass">
                     <div className="text-3xl font-bold text-primary">5+</div>
-                    <div className="text-xs text-muted-foreground mt-1">Years Experience</div>
-                  </div>
-                  <div className="bg-background/50 rounded-lg p-3 glass">
-                    <div className="text-3xl font-bold text-primary">50+</div>
                     <div className="text-xs text-muted-foreground mt-1">Projects Completed</div>
                   </div>
                   <div className="bg-background/50 rounded-lg p-3 glass">
                     <div className="text-3xl font-bold text-primary">10+</div>
                     <div className="text-xs text-muted-foreground mt-1">Technologies</div>
-                  </div>
-                  <div className="bg-background/50 rounded-lg p-3 glass">
-                    <div className="text-3xl font-bold text-primary">100%</div>
-                    <div className="text-xs text-muted-foreground mt-1">Client Satisfaction</div>
                   </div>
                 </div>
               </div>

@@ -11,9 +11,20 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'Empower Equine - AI Integration',
+      description: 'AI-powered features for an equestrian coaching React Native app. Developed cross-platform AI functionality including real-time coaching chat using ChatGPT API and pose analysis for rider posture assessment using OpenAI API with personalized feedback.',
+      image: './pictures/eq.png',
+      tags: ['React Native', 'JavaScript', 'ChatGPT API', 'OpenAI API', 'RESTful APIs', 'AI Integration'],
+      links: {
+        demo: 'https://empower-eq.com/',
+        github: '#',
+      },
+      current: true,
+    },
+    {
       title: 'Queen Of Apostles Renewal Centre Website',
       description: 'A modern website for Queen Of Apostles Renewal Centre built with ASP.NET. This capstone project features a responsive design, booking system, and information about the centre\'s services and facilities.',
-      image: './lovable-uploads/9415a9d9-17eb-408e-8e23-d4335b1c46d8.png',
+      image: './pictures/9415a9d9-17eb-408e-8e23-d4335b1c46d8.png',
       tags: ['C#', 'ASP.NET', 'SQL', 'Bootstrap', 'JavaScript', 'Responsive Design'],
       links: {
         demo: 'https://github.com/AliCebe1986/QueenOfApostlesRenewalCentreWebsite',
@@ -183,29 +194,35 @@ const Projects = () => {
                 </div>
                 {project.capstone && (
                   <div className="mt-2">
-                    <Link 
-                      to="/capstone" 
+                    <Link
+                      to="/capstone"
                       className="inline-flex items-center text-sm font-medium text-primary hover:underline"
                     >
                       View Capstone Details <ArrowUpRight className="ml-1 w-4 h-4" />
                     </Link>
                   </div>
                 )}
+                {project.current && (
+                  <div className="mt-2 flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                    <span className="text-sm font-medium text-green-600">Currently Active</span>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="text-center mt-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <a 
-            href="https://github.com/AliCebe1986" 
-            target="_blank" 
+          <a
+            href="https://github.com/AliCebe1986"
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md bg-primary px-8 py-3 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 hover-lift"
           >

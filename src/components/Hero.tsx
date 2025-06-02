@@ -4,13 +4,13 @@ import { useEffect, useState } from 'react';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  
+
   useEffect(() => {
     // Delay animations until after the component is mounted
     const timer = setTimeout(() => {
       setIsLoaded(true);
     }, 100);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -21,8 +21,8 @@ const Hero = () => {
   ];
 
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
     >
       {/* Animated background elements with reduced animation intensity */}
@@ -34,7 +34,7 @@ const Hero = () => {
           animation: isLoaded ? 'pulse 10s ease-in-out infinite' : 'none'
         }} />
       </div>
-      
+
       <div className="container px-4 md:px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 items-center">
           <div className="space-y-8 max-w-3xl">
@@ -51,8 +51,8 @@ const Hero = () => {
                 Full-Stack Developer
               </p>
             </motion.div>
-            
-            <motion.h1 
+
+            <motion.h1
               className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
               initial="hidden"
               animate={isLoaded ? "visible" : "hidden"}
@@ -66,8 +66,8 @@ const Hero = () => {
               <br />
               <span className="mt-2 block">Creating digital experiences</span>
             </motion.h1>
-            
-            <motion.p 
+
+            <motion.p
               className="text-lg md:text-xl text-muted-foreground max-w-2xl"
               initial="hidden"
               animate={isLoaded ? "visible" : "hidden"}
@@ -77,11 +77,11 @@ const Hero = () => {
               }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Final-year Computer Programming and Analysis student with hands-on experience in software development and IT support.
+              Recent Computer Programming and Analysis graduate with hands-on experience in software development and IT support.
               I specialize in building modern, responsive websites and web applications.
             </motion.p>
-            
-            <motion.div 
+
+            <motion.div
               className="flex flex-wrap gap-4"
               initial="hidden"
               animate={isLoaded ? "visible" : "hidden"}
@@ -91,21 +91,21 @@ const Hero = () => {
               }}
               transition={{ duration: 0.7, delay: 0.3 }}
             >
-              <a 
-                href="#projects" 
+              <a
+                href="#projects"
                 className="inline-flex h-11 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 hover-lift"
               >
                 View My Work
               </a>
-              <a 
-                href="#resume" 
+              <a
+                href="#resume"
                 className="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground hover-lift"
               >
                 My Resume
               </a>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="flex items-center gap-4 pt-2"
               initial={{ opacity: 0 }}
               animate={isLoaded ? { opacity: 1 } : { opacity: 0 }}
@@ -130,8 +130,8 @@ const Hero = () => {
               ))}
             </motion.div>
           </div>
-          
-          <motion.div 
+
+          <motion.div
             className="relative hidden md:block"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isLoaded ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
@@ -150,8 +150,8 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      
-      <motion.a 
+
+      <motion.a
         href="#about"
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-sm text-muted-foreground"
         initial={{ opacity: 0, y: 10 }}
