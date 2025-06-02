@@ -375,14 +375,9 @@ const Resume = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <a
-            href="#"
+            href="/Portfolio/doc/Ali Cebe_Resume.pdf"
+            download="Ali_Cebe_Resume.pdf"
             className="inline-flex items-center gap-2 h-11 rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 hover-lift"
-            onClick={(e) => {
-              e.preventDefault();
-              // This is where you'd add the download functionality for the resume
-              // For now it's just a placeholder
-              alert("Resume download functionality would be implemented here");
-            }}
           >
             <Download className="w-4 h-4" />
             Download Resume
